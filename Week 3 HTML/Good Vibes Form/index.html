@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Vibes Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Good Vibes Form</h1>
+  </header>
+
+  <!-- main tag used to group the main section of the form. A main is more semantic and descriptive than using a div tag -->
+
+  <main class="master-div-style">
+    <p>Tell us something positive that happened to you today.</p>
+    <form action="" method="get">
+
+      <!-- name input field.-->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="name">Name:</label>
+        </div>
+        <div class="fields">
+          <!-- A placeholder attribute is used to help user know what should be put into the textbox. A required attribute is used to make sure all sections are filled in before submission.-->
+          <input class="input-fields" type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+
+      <!-- email input field -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="email">Email:</label>
+        </div>
+        <div class="fields">
+          <!-- input type is set to email to make sure user inputs a properly formatted email address -->
+          <input class="input-fields" type="email" name="email" id="email" placeholder="Enter your email address"
+            required>
+        </div>
+      </div>
+
+      <!-- age input field  -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="age">Age:</label>
+        </div>
+        <div class="fields">
+          <!-- input type set to number to make sure user enters a value that is a number only. Min number set to 1 and max number set to 150. -->
+          <input class="input-fields" type="number" name="age" id="age" min="1" max="150" placeholder="Enter your age"
+            required>
+        </div>
+      </div>
+
+      <!-- scale input field -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="good-scale">On a scale of 1-10, how good was it?</label>
+        </div>
+        <div class="fields">
+          <!-- min number set to 1 and max number set to 10 so user doesn't input a number that isn't on the scale. -->
+          <input class="input-fields" type="number" name="good-scale" id="good-scale"
+            placeholder="Enter a number between 1 and 10" min="1" max="10" required>
+        </div>
+      </div>
+
+      <!-- location dropdown -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="vibes-location">Where did it happen?</label>
+        </div>
+        <div class="fields">
+          <select class="dropdown" name="vibes-location" id="vibes-location" required>
+            <!-- first option is placeholder text to make sure user doesn't select the first option of "at home" by default. A disabled attribute is added to first option to make sure user cannot select it. -->
+            <option value="" disabled>--select location--</option>
+            <option value="home">At home</option>
+            <option value="school">At school</option>
+            <option value="work">At work</option>
+            <option value="commute">On my commute</option>
+            <option value="street">On the street</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- specify other location -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="other-specific">If you have selected "other", please specify:</label>
+        </div>
+        <div class="fields">
+          <!-- input doesn't have a required attribute because it is only for users who have selected 'other' in the previous question.-->
+          <input class="input-fields" type="text" name="other-specific" id="other-specific"
+            placeholder="Specify where 'other' is">
+        </div>
+      </div>
+
+      <!-- time of day radio buttons -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="time-of-day">At what time of day did it happen?</label>
+        </div>
+        <div class="fields">
+          <!-- added inline css to the ul tag to remove the bullet points -->
+          <ul class="radio" style="list-style: none;">
+            <li>
+              <input type="radio" name="time-of-day" value="Morning" id="Morning" required />
+              <label for="Morning">Morning</label>
+            </li>
+            <li>
+              <input type="radio" name="time-of-day" value="Afternoon" id="Afternoon" required />
+              <label for="Afternoon">Afternoon</label>
+            </li>
+            <li>
+              <input type="radio" name="time-of-day" value="Evening" id="Evening" required />
+              <label for="Evening">Evening</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- emotions experienced checkbox -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="emotions-experienced">What emotions did you experience?<br>(Select all that apply)</label>
+        </div>
+        <div class="fields">
+          <ul class="radio" style="list-style: none;">
+            <li>
+              <input type="checkbox" id="contentment" name="emotions-experienced" value="contentment">
+              <label for="contentment">Contentment</label>
+            </li>
+            <li>
+              <input type="checkbox" id="elated" name="emotions-experienced" value="elated">
+              <label for="elated">Elated</label>
+            </li>
+            <li>
+              <input type="checkbox" id="enthusiastic" name="emotions-experienced" value="enthusiastic">
+              <label for="enthusiastic">Enthusiastic</label>
+            </li>
+            <li>
+              <input type="checkbox" id="excited" name="emotions-experienced" value="excited">
+              <label for="excited">Excited</label>
+            </li>
+            <li>
+              <input type="checkbox" id="gratitude" name="emotions-experienced" value="gratitude">
+              <label for="gratitude">Gratitude</label>
+            </li>
+            <li>
+              <input type="checkbox" id="hope" name="emotions-experienced" value="hope">
+              <label for="hope">Hope</label>
+            </li>
+            <li>
+              <input type="checkbox" id="humbled" name="emotions-experienced" value="humbled">
+              <label for="humbled">Humbled</label>
+            </li>
+            <li>
+              <input type="checkbox" id="inspired" name="emotions-experienced" value="inspired">
+              <label for="inspired">Inspired</label>
+            </li>
+            <li>
+              <input type="checkbox" id="loved" name="emotions-experienced" value="loved">
+              <label for="loved">Loved</label>
+            </li>
+            <li>
+              <input type="checkbox" id="relief" name="emotions-experienced" value="relief">
+              <label for="relief">Relief</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <!-- textbox for description of experience -->
+      <div class="form-rows">
+        <div class="labels">
+          <label for="experience-details">Please describe your positive experience.</label>
+        </div>
+        <div class="fields">
+          <textarea class="input-fields" id="experience-details" name="experience-details"
+            placeholder="Enter your experience here..."></textarea>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- reset and submit buttons. Reset button added to make it easier for user to restart their form if they wish to do so. -->
+      <input type="reset" value="Reset" class="button">
+      <input type="submit" value="Submit" class="button">
+
+    </form>
+  </main>
+</body>
+
+</html>
