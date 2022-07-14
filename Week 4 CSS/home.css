@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* clearfix */
+.clear {
+    clear: both;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #676a8c;
+    font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    background-color: #2d354a;
+    height: 70px;
+    width: 100%;
+    font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 70px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+a.active,
+a.hover {
+    border: 1px solid white;
+    background-color: #676a8c;
+}
+
+.logo {
+    flex: 1;
+    opacity: 50%;
+}
+
+.logo img {
+    width: 82px;
+    margin-right: 10px;
+    z-index: -1;
+    margin-left: -30px;
+}
+
+.logo img + img {
+    width: 180px;
+    margin-right: 10px;
+    margin-left: -19px;
+    margin-bottom: -4px;
+}
+
+/* main body */
+.container {
+    /* border: 30px solid white; */
+    background-color: #E6E3F4;
+    height: auto;
+    width: 60%;
+    margin: auto;
+    padding: 40px 0;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.button {
+    background-color: #2d354a;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    text-align: center;
+    width: 25%;
+    margin: 10px;
+}
+
+.container p {
+    padding: 0px 30px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    color: black;
+    font: 18px sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.shoplogo {
+    width: 50%;
+    text-align: center;
+    width: 23%;
+    margin: auto;
+    border: px solid white;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.centre {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+    float: left;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* flex-direction: row; */
+}
+
+.products {
+    width: 50%;
+    padding: 10px;
+    margin: auto 0;
+    text-align: center;
+    float: left;
+}
+
+.products p {
+    margin: 10px auto 0 auto;
+    padding: 0;
+}
+
+.products video {
+    z-index: -1;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.products h2 {
+    margin: 0 0 10px 0;
+}
+
+.smaller-button {
+    width: 60%;
+}
+
+.products p {
+    padding: 10px 0;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    color: black;
+    font: 16px sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* horizontal line */
+.container h1 {
+    padding: 10px 30px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    color: black;
+    font: 30px 'Merienda', sans-serif;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #686868;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+hr:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #E6E3F4;
+    color: #686868;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+/* footer */
+footer {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    padding: 40px 0;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+    color: white;
+}
+
+h3 {
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.contact {
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+.space,
+.links,
+.links li {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

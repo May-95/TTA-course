@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <!-- navigation bar with logo-->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/media/cake logo.svg" alt="A slice of cake icon">
+                    <img src="/media/shop title logo.svg" alt="the shop title 'The Bakery Box'">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a class="active" href="/menu.html">Menu</a></li>
+                <li><a href="/order.html">Order Now</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h1><span>Menu items</span></h1>
+            <hr>
+        </section>
+
+        <!-- pastries items section  -->
+        <section>
+            <div>
+                <h2 id="pastries" class="pastries">Pastries</h2>
+            </div>
+            <div class="menu-item">
+                <h3>CINNAMON SWIRL</h3>
+                <a href="/order.html"><img src="media/cinnamon swirl.jpg"
+                        alt="A close up photo of two Cinnamon Swirls on a plate." height="266" width="400"></a>
+                <p> A Danish classic, with a filling of real cinnamon in a premium quality, crisp Danish pastry swirl.
+                </p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £1.05 </p>
+                <!-- details tag used for ingredients and allergy information so that it is hidden unless the user wants to see it. Makes the page less crowded. -->
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p> DOUGH: WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), Vegetable Margarine (Palm Oil,
+                        Rapeseed Oil, Water, Emulsifier (E471), Salt, Acidity Regulator (E330), Flavouring), Water,
+                        Yeast, Egg Yolk (EGG Yolk, Salt), Sugar, Improver (WHEAT Flour (with Calcium, Iron, Niacin,
+                        Thiamin), WHEAT Gluten, Yeast, Rapeseed Oil, Flour Treatment Agent (E300)). FILLING: Vegetable
+                        Margarine (Palm Oil, Rapeseed Oil, Water, Coconut Oil, Salt, Emulsifier (E471), Acidity
+                        Regulator (E330), Flavouring), Sugar, Water, Custard Powder (Sugar, Modified Potato Starch, Whey
+                        Powder (MILK), Skimmed MILK Powder, Coconut Oil, Stabilisers (E404, E450iii, E339ii, E451i),
+                        Glucose Syrup, Flavouring, Colour (E160aiii), Salt, MILK Protein), Sugar Syrup, Cinnamon (0.5%),
+                        WHEAT Flour, Cane Sugar Syrup. TOPPING: Glaze (Water, Glazing Agent (E953), Sugar, Gelling Agent
+                        (E406), Acidity Regulator (E330), Preservative (E202)). ICING: (Sugar, Water, Glucose Syrup).
+                    </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs.</p>
+                    <p>May contain: Nuts.</p>
+                </details>
+            </div>
+
+            <div class="menu-item">
+                <h3>MINI MIX DANISH SELECTION</h3>
+                <a href="/order.html"><img src="media/mini mix danish selection.jpg"
+                        alt="A close up photo of mini Maple Pecan Plait, Cinnamon Swirl, Apple Coronet, Raspberry Crown and Vanilla Creme Crown. on a plate."
+                        height="266" width="400"></a>
+                <p>Bite-sized versions of Danish pastries in a handy selection pack including mini Maple Pecan Plait,
+                    Cinnamon
+                    Swirl, Apple
+                    Coronet, Raspberry Crown and Vanilla Creme Crown.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £4.50 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>DOUGH: WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), Vegetable Margarine (Palm Oil, Rapeseed
+                        Oil, Water, Emulsifier (E471), Salt, Acidity Regulator (E330), Flavouring), Water, Yeast, Egg
+                        Yolk (EGG Yolk, Salt), Sugar, Improver (WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), WHEAT
+                        Gluten, Yeast, Rapeseed Oil, Flour Treatment Agent (E300)). FILLING: Water, Custard Powder
+                        (6.5%) (Sugar, Modified Potato Starch, Whey Powder (MILK), Skimmed MILK Powder, Coconut Oil,
+                        Stabilisers (E404, E450iii, E339ii, E451i), Glucose Syrup, Salt, Flavouring, MILK Protein,
+                        Colour (E160aiii)), Sugar, Vegetable Margarine (Palm Oil, Rapeseed Oil, Water, Coconut Oil,
+                        Salt, Emulsifier (E471), Acidity Regulator (E330), Flavouring), WHEAT Flour, ALMOND Powder,
+                        Flavouring. TOPPING: Ready Glaze (Water, Glazing Agent (E953), Sugar, Gelling Agent (E406),
+                        Acidity Regulator (E330), Preservative (E202)).</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Nuts.</p>
+                </details>
+            </div>
+
+            <div class="menu-item">
+                <h3>MAPLE & PECAN</h3>
+                <a href="/order.html"><img src="media/maple & pecan.jpg"
+                        alt="A close up photo of two Maple & Pecan pastry on a plate." height="266" width="400"></a>
+                <p>Maple syrup filling in a plait of light, flaky Danish pastry, topped with toasted pecan nuts.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £1.00 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>DOUGH: WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), Vegetable Margarine (Palm Oil, Rapeseed
+                        Oil, Water, Emulsifier (E471), Salt, Acidity Regulator (E330), Flavouring), Water, Yeast, Egg
+                        Yolk (EGG Yolk, Salt), Sugar, Improver (WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), WHEAT
+                        Gluten, Yeast, Rapeseed Oil, Flour Treatment Agent (E300)), Stabiliser (E440i). FILLING: Sugar,
+                        Vegetable Margarine (Palm Oil, Rapeseed Oil, Water, Coconut Oil, Salt, Emulsifier (E471),
+                        Acidity Regulator (E330), Flavouring), Water, Maple Syrup (1%), Custard Powder (Sugar, Modified
+                        Potato Starch, Whey Powder (MILK), Skimmed MILK Powder, Coconut Oil, Stabilisers (E404, E450iii,
+                        E339ii, E451i), Glucose Syrup, Flavouring, Colour (E160aiii), Salt, MILK Protein), WHEAT Flour,
+                        Cane Sugar Syrup, Thickener (E401, E440i), Flavouring. TOPPING: PECAN Nuts (4%), Glaze (Water,
+                        Glazing Agent (E953), Sugar, Gelling Agent (E406), Acidity Regulator (E330), Preservative
+                        (E202)).</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Nuts.</p>
+                </details>
+            </div>
+
+            <div class="menu-item">
+                <h3>CHOCOLATE CROISSANT</h3>
+                <a href="/order.html"><img src="media/chocolate butter croissant.jpg"
+                        alt="A close up photo of two Chocolate Croissants on a plate." height="266" width="400"></a>
+                <p>A rich, buttery, chocolate croissant with a light, open texture; filled end-to-end with a chocolate
+                    flavoured filling and topped with real chocolate shavings.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £1.40 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Dough: WHEAT Flour (WHEAT Gluten, Flour Treatment Agent (Ascorbic Acid E300)), Butter (MILK)
+                        (16%), Water, Yeast, Sugar, Salt, Baking Improver (WHEAT Gluten, WHEAT Flour, Flour Treatment
+                        Agent (Ascorbic Acid E300)), EGG. Filling: Chocolate Flavoured Filling (19%) (Sugar, Sunflower
+                        Oil, Fat Reduced Cocoa Powder, Palm Fat, Skimmed MILK Powder, Emulsifier (SOYA Lecithin E322),
+                        Antioxidant (Rosemary Extract E392)). Topping: Chocolate (4%) (cocoa solids 35% minimum) (Sugar,
+                        Cocoa Mass, Cocoa Butter, Emulsifier (SOYA Lecithin E322)), EGG.</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Soya.</p>
+                </details>
+            </div>
+
+            <div class="menu-item">
+                <h3>VANILLA CROWN</h3>
+                <a href="/order.html"><img src="media/Vanilla Crown.jpg"
+                        alt="A close up photo of two Vanilla Crowns on a plate." height="266" width="400"></a>
+                <p>A light, flaky Danish pastry crown, filled with creme pâtissière and topped with hazelnut slices.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £1.05</p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Dough: WHEAT Flour (with Calcium, Iron, Niacin, Thiamin), Vegetable Margarine (Palm and Rapeseed
+                        Oil, Water, Emulsifier (E471), Salt, Acidity Regulator (E330), Flavouring), Water, Yeast, EGG
+                        Yolk (contains Salt), Sugar, Stabiliser (E440), Baking Agent (WHEAT Flour (with Calcium, Iron,
+                        Niacin, Thiamin), WHEAT Gluten, Yeast, Rapeseed Oil, Flour Treatment Agent (E300)). Filling:
+                        Water, Custard Powder (5%)(Sugar, Modified Potato Starch, Whey Powder (MILK), Skimmed MILK
+                        Powder, Coconut Fat Powder, Glucose Syrup, Stabilisers (E404, E450, E339), Flavourings , Salt,
+                        MILK Protein, Colour (E160aii)), Sugar, Vegetable Margarine (Palm Oil, Rapeseed Oil, Water,
+                        Coconut Oil, Salt, Emulsifier (E471), Acidity Regulator (E330), Flavouring), WHEAT Flour, ALMOND
+                        Powder, Flavouring. Topping: Glaze (Water, Glazing Agent (E953), Sugar, Gelling Agent (E406),
+                        Acidity Regulator (E330), Preservative (E202)), HAZELNUTS. Icing: Icing Sugar, Water, Glucose
+                        Syrup.</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Nuts.</p>
+                </details>
+            </div>
+
+            <div class="menu-item">
+                <h3>BUTTER CROISSANT</h3>
+                <a href="/order.html"><img src="media/butter croissant.jpg"
+                        alt="A close up photo of two Butter Croissants on a plate." height="266" width="400"></a>
+                <p>Delicious Viennese pastry made with a recipe rich in fine butter for a crispy and meltingly soft
+                    texture and an intense taste.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £1.10 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>WHEAT flour, fine butter (MILK) 23%, water, yeast, sugar, EGGS, salt, WHEAT gluten, flour
+                        treatment agents (alpha-amylases, hemicellulases, ascorbic acid). </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs.</p>
+                    <p>May contain: Soya. Nuts. Sesame.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- dessert items section -->
+        <section>
+            <div>
+                <h2 id="desserts" class="desserts">Desserts</h2>
+            </div>
+            <div class="menu-item">
+                <h3>COFFEE & WALNUT CAKE</h3>
+                <a href="order.html"><img src="media/coffee & walnut cake.jpeg"
+                        alt="A full size coffee & walnut cake with a slice missing." height="266" width="400"></a>
+                <p>Coffee and walnut sponge topped with coffee icing and chopped walnuts.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £24.70 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Coffee and walnut sponge (Butter (Milk), Brown Sugar, Wheat Flour, Free Range Egg, Walnuts
+                        (Nuts),
+                        Water,
+                        Bicarbonate Of Soda, Baking Powder, Coffee Powder), Coffee Icing (Icing Sugar, Butter (Milk),
+                        Water,
+                        Brown Sugar, Coffee Powder, Coffee Extract (coffee, Water, Sugar)). </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Nuts.</p>
+                </details>
+            </div>
+            <div class="menu-item">
+                <h3>CHOCOLATE FUDGE CAKE</h3>
+                <a href="order.html"><img src="media/chocolate fudge cake.jpeg"
+                        alt="A full size chocolate fudge cake with a slice missing." height="266" width="400"></a>
+                <p>A round chocolate sponge cake filled and topped with layers of chocolate fudge icing. Decorated with
+                    chocolate
+                    shavings</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £20.50 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Choc Fudge Sponge (Brown Sugar, Wheat Flour, Butter (Milk), Water, Free Range Egg, Buttermilk
+                        (Milk),Chocolate
+                        (66% Cocoa Solid) (Soya), Bicarbonate Of Soda, Vanilla Extract), Chocolate Icing (Chocolate 66%
+                        Cocoa Solid)
+                        (Soya), Milk, Icing Sugar, Butter (Milk)). </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Soya</p>
+                </details>
+            </div>
+            <div class="menu-item">
+                <h3>LEMON TART</h3>
+                <a href="order.html"><img src="media/lemon tart.jpeg" alt="A lemon tart with a slice missing."
+                        height="266" width="400"></a>
+                <p>A sweet pastry case filled with a baked lemon mousse filling.</p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £15.50 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p> Filling : free range EGG, sugar, double cream (MILK), lemon juice (12%), lemon zest (&lt1%).
+                        Short
+                        pastry :
+                        WHEAT flour, caster sugar, cake margarine (Vegetable Oil(SG Palm, Rapeseed), Water, Salt,
+                        Flavourings), free
+                        range EGG. </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs.</p>
+                    <p>May contain: Nuts.</p>
+                </details>
+            </div>
+            <div class="menu-item">
+                <h3>PECAN PIE</h3>
+                <a href="order.html"><img src="media/pecan pie.jpeg" alt="A pecan pie with a slice missing."
+                        height="266" width="400"></a>
+                <p>Hand rolled pastry, filled with pecans baked in a classic butterscotch filling. </p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £21.90 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Pastry (Wheat Flour, Margarine (Vegetable Oils (Palm, Rapeseed), Water, Salt, Natural Flavour),
+                        Sugar, Free
+                        Range Egg),
+                        Pecan Pie Mix (Syrup, Free Range Egg, Sugar, Pecan Nuts, Butter (Milk), Brown Sugar, Glaze
+                        (Sugar,
+                        Glucose,
+                        Pectin E440,
+                        Citric Acid E330, Trisodium Cittrate, Preservative E202), Vanilla Extract).</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs. Soya.</p>
+                </details>
+            </div>
+            <div class="menu-item">
+                <h3>RED VELVET CAKE</h3>
+                <a href="order.html"><img src="media/red velvet cake.jpeg"
+                        alt="A full size red velvet cake with a slice missing." height="266" width="400"></a>
+                <p> Velvety buttermilk sponge, flavoured with vanilla and a hint of cocoa, covered in cream cheese
+                    frosting.
+                </p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £25.50 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p>Red Velvet Sponge (Wheat Flour, Sugar, Sunflower Oil, Buttermilk (Milk), Free Range Egg,
+                        Bicarbonate
+                        Of Soda,
+                        Vanilla
+                        Extract, Carmine E120, Cocoa Powder), Cheese Icing (Icing Sugar, Full Fat Soft Cheese (Milk,
+                        Salt,
+                        Cultures,
+                        Microbial
+                        Rennet, Thickening Agent E412) (Milk), Butter (Milk).</p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs.</p>
+                </details>
+            </div>
+            <div class="menu-item">
+                <h3>VICTORIA SPONGE CAKE</h3>
+                <a href="order.html"><img src="media/victoria sponge cake.jpeg"
+                        alt="A full size victoria sponge cake with a slice missing." height="266" width="400"></a>
+                <p> A light, traditional sponge with premium raspberry jam and real vanilla buttercream. </p>
+                <p class="veg"> Suitable for Vegetarians</p>
+                <p class="price"> £22.50 </p>
+                <details class="clear">
+                    <summary>Ingredients</summary>
+                    <p> Sugar, butter (milk), free range eggs, wheat flour (gluten), raising agent: baking powder (E500,
+                        E450) ,
+                        raspberry
+                        jam(sugar, raspberries, lemon juice, gelling agent: citrus pectin), milk, natural flavour:
+                        vanilla
+                        extract,
+                        dusting powder (Wheat starch, dextrose, vegetable oil, salt, flavouring: natural vanilla). </p>
+                </details>
+                <details>
+                    <summary>Allergy information</summary>
+                    <p>Contains: Gluten. Milk. Eggs.</p>
+                </details>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3 class="space">Contact details:</h3>
+            <h4 class="space">Phone number:</h4>
+            <span class="space"><a href="tel:0121 000 0000">0121 000 0000</a></span>
+            <h4 class="space">Email address:</h4>
+            <span class="space">
+                <a href="mailto:queries@thebakerybox.com" class="space">queries@thebakerybox.com</a>
+            </span>
+        </div>
+        <div class="links">
+            <h3>Links:</h3>
+            <ul>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="order.html">Order Form</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/order.css">
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar with logo -->
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/media/cake logo.svg" alt="A slice of cake icon">
+                    <img src="/media/shop title logo.svg" alt="the shop title 'The Bakery Box'">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a class="active" href="/order.html">Order Now</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Order form</h1>
+        <!-- order form with user inputs. Required attribute used to make sure user fills in the details needed for delivery. -->
+        <form? action="" method="post">
+            <div>
+                <label class="labels" for="name">Name:</label>
+                <input class="input-field" type="text" name="name" id="name" placeholder="Full name" required>
+            </div>
+            <div>
+                <label class="labels" for="email">Email address: </label>
+                <input class="input-field" type="email" name="email" id="email" placeholder="Email address" required>
+            </div>
+            <div>
+                <label class="labels" for="address">Delivery address:</label>
+                <input class="input-field" type="text" name="address" id="address" placeholder="Address" required>
+            </div>
+            <div>
+                <label class="labels" for="city">City:</label>
+                <input class="input-field" type="text" name="city" id="city" placeholder="City" required>
+            </div>
+            <div>
+                <label class="labels" for="postcode">Postcode:</label>
+                <input class="input-field" type="text" name="postcode" id="postcode" placeholder="Postcode" required>
+            </div>
+            <br>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- max quantity number set to 10 so user doesn't accidentally order more than they should. -->
+                    <tr>
+                        <td>Mini mix danish selection</td>
+                        <td>£4.50</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Cinnamon swirl</td>
+                        <td>£1.05</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate croissant</td>
+                        <td>£1.40</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Maple & pecan</td>
+                        <td>£1.00</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Butter croissant</td>
+                        <td>£1.10</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla crown</td>
+                        <td>£1.05</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate fudge cake</td>
+                        <td>£20.50</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Coffee & walnut cake</td>
+                        <td>£24.70</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Pecan pie</td>
+                        <td>£21.90</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Lemon tart</td>
+                        <td>£15.50</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Victoria sponge cake</td>
+                        <td>£22.50</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                    <tr>
+                        <td>Red velvet cake</td>
+                        <td>£25.50</td>
+                        <td class="quantity"><input class="input-field" type="number" name="quantity" id="quantity" max="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- reset and submit buttons  -->
+            <div class="centre ">
+                <input class="button" type="reset" name="reset" value="Reset">
+                <input class="button" type="submit" value="Place order">
+            </div>
+        </form>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="contact">
+            <h3 class="space">Contact details:</h3>
+            <h4 class="space">Phone number:</h4>
+            <span class="space"><a href="tel:0121 000 0000">0121 000 0000</a></span>
+            <h4 class="space">Email address:</h4>
+            <span class="space">
+                <a href="mailto:queries@thebakerybox.com" class="space">queries@thebakerybox.com</a>
+            </span>
+        </div>
+        <div class="links">
+            <h3>Links:</h3>
+            <ul>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="order.html">Order Form</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

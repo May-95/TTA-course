@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/contact.css">
+</head>
+
+<body>
+    <!-- navigation bar with logo -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/media/cake logo.svg" alt="A slice of cake icon">
+                    <img src="/media/shop title logo.svg" alt="the shop title 'The Bakery Box'">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/order.html">Order Now</a></li>
+                <li><a class="active" href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us:</h1>
+            <form action="" method="post">
+                <div>
+                    <label class="labels" for="name">Name:</label>
+                    <input class="input-field" type="text" name="name" id="name" placeholder="Full name" required>
+                </div>
+                <div>
+                    <label class="labels" for="email">Email address:</label>
+                    <input class="input-field" type="email" name="email" id="email" placeholder="Email address" required>
+                </div>
+                <div>
+                    <label class="labels" for="subject">Subject:</label>
+                    <input class="input-field" type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+                <div>
+                    <label class="labels" for="message">Message:</label>
+                    <textarea class="input-field textarea" name="message" id="" cols="30"
+                        rows="10">Enter your message...</textarea>
+                </div>
+                <div class="centre">
+                    <button class="button">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="contact">
+            <h3 class="space">Contact details:</h3>
+            <h4 class="space">Phone number:</h4>
+            <span class="space"><a href="tel:0121 000 0000">0121 000 0000</a></span>
+            <h4 class="space">Email address:</h4>
+            <span class="space">
+                <a href="mailto:queries@thebakerybox.com" class="space">queries@thebakerybox.com</a>
+            </span>
+        </div>
+        <div class="links">
+            <h3>Links:</h3>
+            <ul>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="order.html">Order Form</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+</body>
+</html>
