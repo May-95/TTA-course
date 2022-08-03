@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Amatic+SC:wght@700&?family=Montserrat&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bc16dee82.js" crossorigin="anonymous"></script>
+    <title>Tech NEWS!</title>
+</head>
+
+<body>
+    <!-- header contains main title and navigational content -->
+    <header>
+        <h1 class="blogTitle">TECH NEWS</h1>
+        <nav>
+            <ul id="horizontalLine">
+                <li><a class="active" id="link1" href="#home">Home</a></li>
+                <li><a href="contact.html" class="" id="link2">Contact Us</a></li>
+                <!-- icon for switching between dark and light theme -->
+                <li><i id="icon" class="fa-solid fa-toggle-on fa-lg"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main contains the main content of the page which is the contact form. Main has more semantic meaning than a div tag. -->
+    <main>
+        <!-- div containing articles -->
+        <div id="posts">
+            <!-- content of each blog post will be wrapped in a article tag because they are independent, self-contained content. Article has more semantic meaning than a div tag.  -->
+            <article>
+                <h1>New features of iOS 16.</h1>
+                <h3>By John Smith</h3>
+                <p id="p">
+                    The new features of iOS 16 were revealed during June's WWDC event. One of the main features is the
+                    ability to personalise the lockscreen with customisable font styles and widgets. You can now create
+                    different lock screen styles and switch between them. Widgets like the weather, time, battery levels
+                    and upcoming calendar events will allow you to get information at a glance without opening your
+                    phone.
+                    <br><br>
+                    Notifications now stay out of the way by appearing at the bottom of the screen. Changes have been
+                    made to Messages. You can now edit sent messages or unsend a message. Recently deleted messages can
+                    be recovered up to 30 days after deleting them. Messages can now be marked as unread for when you
+                    don't have time to respond but want to come back to it later on.
+                    <br><br>
+                    The health app has a new medication feature to help you manage and track your medication. iPhone
+                    users can now use the fitness app without an apple watch to track and meet their fitness goals. It
+                    uses the iPhone's motion sensors to count your steps and calculate an estimate of your calories to
+                    contribute to your daily Move goal.
+                    <br><br>
+                    The Notes app is getting some new features like the ability to create Quick Note in any app from the
+                    share menu. You can also now lock your notes with your iPhone passcode. Hidden and recently deleted
+                    albums in photos will be locked by default so only you can unlock it with your passcode. Live text
+                    is coming to videos. Text can now be interacted with in paused videos. You can copy, paste, look up
+                    or translate text in a video.
+                    <br><br>
+                    iOS 16 will be released sometime in September.
+                </p>
+            </article>
+        </div>
+        <!-- form content to add new blog post -->
+        <div>
+            <h2 class="form-title">Add new blog post:</h2>
+            <form action="" id="form" method="get">
+                <label class="labels" for="title" id="labelT">Title:</label><br>
+                <input class="input-field" type="text" name="title" id="title" required><br>
+                <label class="labels" for="author-name" id="labelA">Name:</label><br>
+                <input class="input-field" type="text" name="author-name" id="author-name" required><br>
+                <label class="labels" for="blogpost" id="labelB"> Blog body:</label>
+                <textarea name="blogpost" id="blogpost" cols="100" rows="20" required></textarea>
+                <div class="buttons">
+                    <input class="button" type="submit" value="SUBMIT" id="submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer tag for the links at the bottom of the page -->
+    <footer>
+        <div class="footer">
+            <!-- link icons wrapped in anchor tag so they take the user to the necessary pages -->
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook" id="footerIcon1"></i></a>
+            <a href="www.twitter.com"><i class="fa-brands fa-twitter" id="footerIcon2"></i></a>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram" id="footerIcon3"></i></a>
+            <a href="mailto:contact@technews.com"><i class="fa-solid fa-envelope" id="footerIcon4"></i></a>
+        </div>
+        <span> TECH NEWS &copy; 2022</span>
+    </footer>
+
+    <script src="scripts/home.js" type="text/javascript"></script>
+</body>
+
+</html>

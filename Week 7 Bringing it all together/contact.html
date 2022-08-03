@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Amatic+SC:wght@700&?family=Montserrat&family=Roboto+Mono:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bc16dee82.js" crossorigin="anonymous"></script>
+    <title>Tech NEWS!</title>
+</head>
+
+<body>
+    <!-- header contains main title and navigational content -->
+    <header>
+        <h1 class="blogTitle">TECH NEWS</h1>
+        <nav>
+            <ul id="horizontalLine">
+                <li><a id="link1" href="index.html">Home</a></li>
+                <li><a href="contact.html" id="link2">Contact Us</a></li>
+                <!-- icon for switching between dark and light theme -->
+                <li><i id="icon" class="fa-solid fa-toggle-on fa-lg"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main contains the main content of the page which is the contact form. Main has more semantic meaning than a div tag. -->
+    <main>
+        <h1 class="form-title">Contact Us:</h1>
+        <form action="" id="form">
+            <label class="labels" for="subject" id="labelS">Subject:</label><br>
+            <input class="input-field" type="text" name="subject" id="subject" required><br>
+            <label class="labels" for="emailContent" id="labelC">Message:</label>
+            <textarea name="emailContent" id="emailContent" cols="100" rows="20" required></textarea>
+            <div class="centre">
+                <a href="" target="_top" class="emailLink" id="emailLink">SEND MESSAGE!</a>
+            </div>
+        </form>
+    </main>
+
+    <!-- footer content -->
+    <footer>
+        <div class="footer">
+            <!-- link icons wrapped in anchor tag so they take the user to the necessary pages -->
+            <a href="www.facebook.com"><i class="fa-brands fa-facebook" id="footerIcon1"></i></a>
+            <a href="www.twitter.com"><i class="fa-brands fa-twitter" id="footerIcon2"></i></a>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram" id="footerIcon3"></i></a>
+            <a href="mailto:contact@technews.com"><i class="fa-solid fa-envelope" id="footerIcon4"></i></a>
+        </div>
+        <span> TECH NEWS &copy; 2022</span>
+    </footer>
+
+    <script src="scripts/contactUs.js" type="text/javascript"></script>
+</body>
+
+</html>
