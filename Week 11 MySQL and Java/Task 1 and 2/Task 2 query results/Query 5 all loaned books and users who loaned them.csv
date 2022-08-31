@@ -1,0 +1,8 @@
+user_id,first_name,last_name,ISBN,author,title
+1,Noah,Anderson,9781408855652,"J. K. Rowling","Harry Potter and the Philosopher's Stone"
+1,Noah,Anderson,9781408855669,"J. K. Rowling","Harry Potter and the Chamber of Secrets"
+1,Noah,Anderson,9781408855676,"J. K. Rowling","Harry Potter and the Prisoner of Azkaban"
+3,Rachel,Thompson,9780261103573,"J. R. R. Tolkien","The Fellowship of the Ring"
+6,Catherine,Martin,9781472154668,"Delia Owens","Where the Crawdads Sing"
+8,Rebecca,White,9780007447848,"George R.R. Martin","A Storm of Swords: Steel and Snow"
+8,Rebecca,White,9780007447855,"George R.R. Martin","A Storm of Swords: Blood and Gold"
